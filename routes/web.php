@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/send/mail', 'MailController@mail')->name('mail.send');
+Route::get('/mail/{to}/{subject}/{message}', 'MailController@send')->name('mail');
